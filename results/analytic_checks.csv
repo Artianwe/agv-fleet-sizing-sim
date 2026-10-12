@@ -1,0 +1,2 @@
+arrival_rate_per_h,m1_capacity_per_h,m2_capacity_per_h,bottleneck,bottleneck_capacity_per_h,m2_load_ratio,loaded_leg_time_min
+15.0,8.571428571428571,6.666666666666667,M2,6.666666666666667,2.25,2.5833333333333335

@@ -1,0 +1,18 @@
+VALIDATION REPORT
+=================
+
+Pre-experiment checks
+  [PASS] Travel time: 100 m at 0.8 m/s = 2.083 min; 0 m -> 0 min; negative distance rejected  (t(100 m) = 2.0833 min)
+  [PASS] Small run (120 min, 2 AGVs) completes with policy FIFO  (6 components completed, all invariants passed)
+  [PASS] Small run (120 min, 2 AGVs) completes with policy NEAREST  (9 components completed, all invariants passed)
+  [PASS] Same seed gives identical results  (seed 42)
+  [PASS] Different seeds give different arrival streams  (arrivals 142 vs 122)
+
+Post-experiment checks
+  [PASS] Every replication finished with all invariants satisfied (route order, one load per AGV, machine capacity 1, non-negative travel times)  (200 of 200 replications)
+  [PASS] AGV utilisation within [0, 100] %  (min 0.457, max 1.000)
+  [PASS] Throughput never exceeds what Machine 2 can physically finish in the window  (max observed 6.750 /h, physical limit 6.750 /h)
+  [PASS] Common random numbers: same arrivals for every policy/fleet size within a replication  (20 replications checked)
+  [PASS] Distances and waiting times are non-negative
+
+OVERALL: ALL CHECKS PASSED
